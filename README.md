@@ -1,2 +1,3 @@
-# raceweek-ts-api
-Raceweek API in typescript
+# Trello clone API in Typescript
+
+This API has been developed following DDD concepts
