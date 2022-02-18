@@ -1,6 +1,7 @@
+import fs from 'fs';
+
 import { Configuration } from '../Configuration';
 import { ConfigurationProvider } from '../ConfigurationProvider';
-import fs from 'fs';
 
 export class ConfigurationFromFileProvider implements ConfigurationProvider {
   constructor(private filePath: string) {}

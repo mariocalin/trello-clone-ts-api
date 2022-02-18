@@ -1,4 +1,5 @@
 import * as env from 'env-var';
+
 import { ConfigurationLoadMode, ConfigurationProvider } from './ConfigurationProvider';
 import { ConfigurationFromEnvProvider } from './providers/ConfigurationFromEnvProvider';
 import { ConfigurationFromFileProvider } from './providers/ConfigurationFromFileProvider';

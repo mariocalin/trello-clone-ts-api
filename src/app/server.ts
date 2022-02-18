@@ -1,7 +1,8 @@
-import * as http from 'http';
-import { Logger, LoggerFactory } from './logger/Logger';
-import Router from 'express-promise-router';
 import express from 'express';
+import Router from 'express-promise-router';
+import * as http from 'http';
+
+import { Logger, LoggerFactory } from './logger/Logger';
 import { registerRoutes } from './routes';
 
 export class Server {
@@ -20,7 +21,7 @@ export class Server {
 
   async listen(): Promise<void> {
     this.httpServer = this.express.listen(this.port, () => {
-      this.logger.error(`Server is running at http://localhost:${this.port} in ${this.express.get('env')} mode`);
+      this.logger.info(`Trello API is running at http://localhost:${this.port} in ${this.express.get('env')} mode`);
       return Promise.resolve();
     });
   }

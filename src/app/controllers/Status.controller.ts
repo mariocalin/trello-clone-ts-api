@@ -1,7 +1,8 @@
 import { Request, Response } from 'express';
-import { Controller } from './Controller';
-import { Service } from 'typedi';
 import httpStatus from 'http-status';
+import { Service } from 'typedi';
+
+import { Controller } from './Controller';
 
 @Service()
 export default class StatusController implements Controller {

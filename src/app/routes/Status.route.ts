@@ -1,5 +1,6 @@
 import { Request, Response, Router } from 'express';
 import Container from 'typedi';
+
 import StatusController from '../controllers/Status.controller';
 
 export const register = (router: Router) => {

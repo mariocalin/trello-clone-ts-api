@@ -1,4 +1,5 @@
 import 'reflect-metadata';
+
 import { Configuration } from './configuration';
 import { Server } from './server';
 
@@ -21,7 +22,7 @@ export class App {
 
   get port(): number {
     if (!this.server) {
-      throw new Error('Backoffice backend application has not been started');
+      throw new Error('Trello API has not been started');
     }
     return this.server.port;
   }

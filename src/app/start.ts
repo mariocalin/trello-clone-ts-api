@@ -1,7 +1,8 @@
 import * as dotenv from 'dotenv-flow';
 import * as env from 'env-var';
-import { ConfigurationFactory, stringToConfigurationLoadModuleEnum } from './configuration';
+
 import { App } from './app';
+import { ConfigurationFactory, stringToConfigurationLoadModuleEnum } from './configuration';
 
 // Initialize dotenv configuration to load ENV file
 dotenv.config();
